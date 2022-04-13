@@ -2,13 +2,13 @@ ALGORITHM checkpoint_algo
 VAR
     c : CHAR := '';
     sen : STRING := '';
-    len : INTEGER :=0;
-    words : INTEGER :=1;
-    vowels :INTEGER :=0;
+    len : INTEGER := 0;
+    words : INTEGER := 1;
+    vowels :INTEGER := 0;
 BEGIN
    WHILE (c<>'.') DO
        Write('The caracter please');
-       Read(c)
+       Read(c);
        sen := sen+c;
        len := len+1;
        IF (c==' ') THEN
