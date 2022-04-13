@@ -1,4 +1,4 @@
-ALGORITHM algorithm_name
+ALGORITHM checkpoint_algo
 VAR
     c : CHAR := '';
     sen : STRING := '';
@@ -9,18 +9,18 @@ BEGIN
    WHILE (c<>'.') DO
        Write('The caracter please');
        Read(c)
-       sen:=sen+c;
-       len:=len+1;
+       sen := sen+c;
+       len := len+1;
        IF (c==' ') THEN
-           words:=words+1;
+           words := words+1;
         END_IF
         IF (c=='a' or c=='e' or c=='i' or c=='o' or c=='u' or c=='A' or c=='E' or c=='I' or c=='O' or c=='U') THEN
-           vowels:=vowels+1;
+           vowels := vowels+1;
         END_IF
    END_WHILE
    
-   Write('Your sentence : ', sen)
-   Write('The length of the sentence : ', len)
-   Write('The number of words in the sentence : ', words)
-   Write('The number of vowels in the sentence : ',vowels)
+   Write('Your sentence : ', sen);
+   Write('The length of the sentence : ', len);
+   Write('The number of words in the sentence : ', words);
+   Write('The number of vowels in the sentence : ',vowels);
 END
