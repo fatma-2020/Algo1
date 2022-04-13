@@ -1,0 +1,26 @@
+ALGORITHM algorithm_name
+VAR
+    c : CHAR := '';
+    sen : STRING := '';
+    len : INTEGER :=0;
+    words : INTEGER :=1;
+    vowels :INTEGER :=0;
+BEGIN
+   WHILE (c<>'.') DO
+       Write('The caracter please');
+       Read(c)
+       sen:=sen+c;
+       len:=len+1;
+       IF (c==' ') THEN
+           words:=words+1;
+        END_IF
+        IF (c=='a' or c=='e' or c=='i' or c=='o' or c=='u' or c=='A' or c=='E' or c=='I' or c=='O' or c=='U') THEN
+           vowels:=vowels+1;
+        END_IF
+   END_WHILE
+   
+   Write('Your sentence : ', sen)
+   Write('The length of the sentence : ', len)
+   Write('The number of words in the sentence : ', words)
+   Write('The number of vowels in the sentence : ',vowels)
+END
